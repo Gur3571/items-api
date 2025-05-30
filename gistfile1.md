@@ -11,7 +11,11 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 **Objective**: Create a simple Django app with a REST API to manage a collection of "items".
 
 ### 1. Models:
-- Create a model for "items" with appropriate fields to store relevant data. You are free to decide which fields are necessary and their types.
+- Create a model for "items" with at least the following fields:
+    - `name`: Name of the item.
+    - `description`: Description of the item.
+    - `created_at`: Timestamp for when the item was created.
+    - `updated_at`: Timestamp for when the item was last updated.
 
 ### 2. API Endpoints:
 - Create the following endpoints:
@@ -22,10 +26,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 
 - Any library or framework can be used to help build the API endpoints (such as Django Rest Framework, DRF, or any other suitable method).
 
-### 3. Authentication: 
-- Implement basic authentication for the API (you can choose any authentication method, such as session-based or token-based).
-
-### 4. Error Handling: 
+### 3. Error Handling: 
 - Return appropriate HTTP status codes for success and failure (e.g., 404 for "not found", 400 for "bad request", etc.).
 
 ---
@@ -59,32 +60,13 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 The candidate should:
 - Provide a **working Django API** that can be run locally, with appropriate instructions on how to set it up.
 - Provide a **React app** that communicates with the API.
+- The code for both the backend (Django) and frontend (React) can be within the same repository, but they must be runnable as separate apps (e.g., you should be able to start the backend and frontend independently).
 - Include a `README.md` with setup instructions, and a brief explanation of their approach and any design decisions made.
 
 ---
 
 ## Additional Notes:
-- **Time Frame**: This task should be completed within **2 hours**.
 - **Testing**: The candidate should test the API endpoints with tools like Postman or cURL, and the React app should be tested in the browser.
 - **Bonus Points**: Clean code, error handling, validation on both the frontend and backend, and attention to detail in API response status codes.
-
----
-
-## Evaluation Criteria:
-
-### 1. **Django API**:
-- Correct implementation of API endpoints.
-- Proper HTTP response codes and error handling.
-- Clean and readable code with proper structuring.
-
-### 2. **React App**:
-- Correct handling of HTTP requests using any HTTP client.
-- Proper form handling and state management.
-- UI/UX, even if simple, should be user-friendly.
-
-### 3. **Overall**:
-- Proper use of the HTTP protocol (GET, POST, PATCH).
-- Clean and maintainable code.
-- Attention to detail in functionality and structure.
 
 ---
