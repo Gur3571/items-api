@@ -58,9 +58,3 @@ The candidate should:
 - Include a `README.md` with setup instructions.
 
 ---
-
-## Additional Notes:
-- **Testing**: The candidate should test the API endpoints with tools like Postman or cURL, and the React app should be tested in the browser.
-- **Bonus Points**: Clean code, error handling, validation on both the frontend and backend, and attention to detail in API response status codes.
-
----
