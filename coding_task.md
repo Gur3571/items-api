@@ -24,7 +24,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
     3. **PATCH /items/{id}/**: Update an existing item.
     4. **GET /items/{id}/**: Get a specific item by its ID.
 
-- Any library or framework can be used to help build the API endpoints (such as Django Rest Framework, DRF, or any other suitable method).
+- Any library or framework can be used to help build the API endpoints (such as Django Rest Framework).
 
 ### 3. Error Handling: 
 - Return appropriate HTTP status codes for success and failure (e.g., 404 for "not found", 400 for "bad request", etc.).
@@ -44,14 +44,8 @@ You’ll be building a small API in Django that supports basic CRUD operations a
     - `POST` request to `/items/` to create a new item.
     - `PATCH` request to `/items/{id}/` to update an existing item.
 
-### 3. State Management:
-- You can choose your preferred method for managing application state.
-
-### 4. Form Handling:
-- Implement forms to submit new items and update existing ones (via `POST` and `PATCH`).
-
-### 5. Design:
-- The design should be simple but functional. Feel free to use basic HTML and CSS or incorporate a UI framework (such as Material-UI, Bootstrap, or something else).
+### 3. Design:
+- Feel free to use any a UI framework (such as Chakra UI, or something else).
 
 ---
 
@@ -61,7 +55,7 @@ The candidate should:
 - Provide a **working Django API** that can be run locally, with appropriate instructions on how to set it up.
 - Provide a **React app** that communicates with the API.
 - The code for both the backend (Django) and frontend (React) can be within the same repository, but they must be runnable as separate apps (e.g., you should be able to start the backend and frontend independently).
-- Include a `README.md` with setup instructions, and a brief explanation of their approach and any design decisions made.
+- Include a `README.md` with setup instructions.
 
 ---
 
