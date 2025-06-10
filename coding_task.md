@@ -10,8 +10,8 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 
 **Objective**: Create a simple Django app with a REST API to manage a collection of "items".
 
-### 1. Models:
-- Create a model for "items" with at least the following fields:
+### 1. Database:
+- Create a table for "items" with at least the following fields:
     - `name`: Name of the item.
     - `description`: Description of the item.
     - `created_at`: Timestamp for when the item was created.
