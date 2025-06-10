@@ -51,6 +51,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 
 ## Part 3: Task Submission
 
+- Submit code to Git repository and provide access to it
 - Provide a **working Django API** that can be run locally, with appropriate instructions on how to set it up.
 - Provide a **React app** that communicates with the API.
 - The code for both the backend (Django) and frontend (React) can be within the same repository, but they must be runnable as separate apps (e.g., you should be able to start the backend and frontend independently).
