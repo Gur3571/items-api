@@ -13,6 +13,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 ### 1. Data:
 - An item entity should have at least the following fields
     - `name`: Name of the item.
+    - `description`: Name of the item.
     - `group`: Item group.
     - `created_at`: Timestamp for when the item was created.
     - `updated_at`: Timestamp for when the item was last updated.
