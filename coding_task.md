@@ -38,13 +38,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 ### 1. App Structure:
 - Build a small app to interact with the API. You can choose the structure and methods for managing state, making HTTP requests, and organizing components. Utilize all endpoints and build the following functionality - list items, create new item, update existing item, review single item.
 
-### 2. API Interaction:
-- Use any HTTP client (such as `fetch` or `axios`) to interact with the Django API. 
-    - `GET` request to `/items/` to retrieve the list of items.
-    - `POST` request to `/items/` to create a new item.
-    - `PATCH` request to `/items/{id}/` to update an existing item.
-
-### 3. Design:
+### 2. Design:
 - Feel free to use any a UI framework (such as Chakra UI, or something else).
 
 ---
