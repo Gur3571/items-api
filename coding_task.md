@@ -13,7 +13,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 ### 1. Data:
 - An item entity should have at least the following fields
     - `name`: Name of the item.
-    - `description`: Name of the item.
+    - `description`: Description of the item.
     - `group`: Item group.
     - `created_at`: Timestamp for when the item was created.
     - `updated_at`: Timestamp for when the item was last updated.
@@ -28,8 +28,8 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 - Any library or framework can be used to help build the API endpoints (such as Django Rest Framework).
 
 ### 3. Additional rules to adhere to:
-- Have at least 2 item groups - Primary, Secondary
-- There should be only unqiue item names in each group (e.g item with name "Rock" can be both in Primary and Secondary groups, but there can't be 2 items named "Rock" in the same group, e.g Primary)
+- There should be at least two item groups: Primary and Secondary.
+- Each group should contain only unique item names. For example, an item named 'Rock' can appear in both the Primary and Secondary groups, but there can't be two items named 'Rock' in the same group (e.g., in the Primary group).
 
 ### 4. Error Handling: 
 - Return appropriate HTTP status codes for success and failure (e.g., 404 for "not found", 400 for "bad request", etc.).
