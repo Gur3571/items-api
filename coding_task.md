@@ -29,7 +29,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 
 ### 3. Additional rules to adhere to:
 - Have at least 2 item groups - Primary, Secondary
-- There should be only unqiue item names in each group (e.g item with name "Rock" can be both in Primary and Secondary groups, but there can't be 2 items named "Rock" in one group, e.g Primary)
+- There should be only unqiue item names in each group (e.g item with name "Rock" can be both in Primary and Secondary groups, but there can't be 2 items named "Rock" in the same group, e.g Primary)
 
 ### 4. Error Handling: 
 - Return appropriate HTTP status codes for success and failure (e.g., 404 for "not found", 400 for "bad request", etc.).
