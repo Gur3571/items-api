@@ -41,7 +41,7 @@ You’ll be building a small API in Django that supports basic CRUD operations a
 **Objective**: Create a small React app that communicates with the Django API and allows users to interact with the items.
 
 ### 1. App Structure:
-- Build a small app to interact with the API. You can choose the structure and methods for managing state, making HTTP requests, and organizing components. Utilize all endpoints and build the following functionality - list items, create new item, update existing item, review single item.
+- Build a small app to interact with the API. You can choose the structure and methods for managing state, making HTTP requests, and organizing components. Utilize all endpoints and build the following functionality - list items, create new item, review single item, update existing item.
 
 ### 2. Design:
 - Feel free to use any a UI framework (such as Chakra UI, or something else).
