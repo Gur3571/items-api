@@ -1,0 +1,127 @@
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: 500;
+  margin: 0 0 2px;
+}
+
+.count {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.newButton {
+  background: var(--text);
+  color: var(--surface);
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.newButton:hover {
+  opacity: 0.88;
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  
+  /* Pulls the tab down slightly to sit directly on top of the parent container's bottom border */
+  margin-bottom: -1px; 
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tabActive {
+  color: var(--text);
+  font-weight: 500;
+  border-bottom-color: var(--text);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+  padding: var(--space-3) var(--space-1);
+}
+
+.row {
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.row:hover {
+  background: var(--surface-muted);
+}
+
+.td {
+  padding: var(--space-3) var(--space-1);
+  font-size: var(--text-base);
+}
+
+.tdCreated {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.tdUpdated {
+  font-size: var(--text-sm);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.badgePrimary {
+  background: var(--primary-bg);
+  color: var(--primary-fg);
+}
+
+.badgeSecondary {
+  background: var(--secondary-bg);
+  color: var(--secondary-fg);
+}
