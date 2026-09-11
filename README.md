@@ -5,7 +5,7 @@ Django REST Framework backend, React frontend, runnable independently.
 
 ## Requirements
 
-- Python 3.11+
+- Python 3.10+
 - Node 18+
 
 ## Backend
