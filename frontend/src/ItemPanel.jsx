@@ -3,12 +3,17 @@ import { createItem, getItem, updateItem } from './api'
 import { formatTimestamp } from './format'
 import styles from './ItemPanel.module.css'
 
+/**
+ * Side drawer panel component that handles displaying, editing, 
+ * and creating individual collection items.
+ */
+
 export function ItemPanel({ mode, itemId, onClose, onSaved }) {
   const [item, setItem] = useState(null)
   const [loadingItem, setLoadingItem] = useState(false)
   const [loadError, setLoadError] = useState(null)
 
-  // mode prop is the starting point; the panel switches view↔edit itself
+  // mode prop is the starting point; the panel switches from view to edit and vice-versa itself
   const [localMode, setLocalMode] = useState(mode)
   const [name, setName] = useState('')
   const [group, setGroup] = useState('primary')
@@ -99,6 +104,7 @@ export function ItemPanel({ mode, itemId, onClose, onSaved }) {
     }
   }
 
+  // Validates inputs and submits a new item  
   async function handleCreate() {
     if (!name.trim()) {
       setFieldErrors({ name: ['Name cannot be blank.'] })
