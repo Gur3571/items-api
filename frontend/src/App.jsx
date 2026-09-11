@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useItems } from './useItems'
 import { formatTimestamp } from './format'
+import { ItemPanel } from './ItemPanel'
 import styles from './App.module.css'
 
 const TABS = [
@@ -10,11 +11,14 @@ const TABS = [
 ]
 
 function App() {
-  const { items, loading, error } = useItems()
+  const { items, loading, error, refetch } = useItems()
   const [activeTab, setActiveTab] = useState('all')
+  const [panel, setPanel] = useState({ mode: null, id: null })
 
   const visibleItems =
     activeTab === 'all' ? items : items.filter((item) => item.group === activeTab)
+
+  const closePanel = () => setPanel({ mode: null, id: null })
 
   return (
     <div className={styles.page}>
@@ -24,7 +28,12 @@ function App() {
             <h1 className={styles.title}>Items</h1>
             <p className={styles.count}>{items.length} items across 2 groups</p>
           </div>
-          <button className={styles.newButton}>New item</button>
+          <button
+            className={styles.newButton}
+            onClick={() => setPanel({ mode: 'create', id: null })}
+          >
+            New item
+          </button>
         </header>
 
         <nav className={styles.tabs}>
@@ -54,7 +63,11 @@ function App() {
             </thead>
             <tbody>
               {visibleItems.map((item) => (
-                <tr key={item.id} className={styles.row}>
+                <tr
+                  key={item.id}
+                  className={styles.row}
+                  onClick={() => setPanel({ mode: 'view', id: item.id })}
+                >
                   <td className={styles.td}>{item.name}</td>
                   <td className={styles.td}>
                     <span
@@ -79,6 +92,14 @@ function App() {
           </table>
         )}
       </div>
+
+      <ItemPanel
+        mode={panel.mode}
+        itemId={panel.id}
+        onClose={closePanel}
+        onSaved={refetch}
+        existingItems={items}
+      />
     </div>
   )
 }
